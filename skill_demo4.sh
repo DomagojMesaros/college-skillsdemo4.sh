@@ -2,9 +2,14 @@
 
 set -euo pipefail
 
+spaces() {
+    echo "_____________________________________________________________________________________"
+}
 screenshot() {
+  spaces
   echo "Screenshot now. Press ENTER to continue after it has been taken..."
   read
+  spaces
 }
 
 echo "Installing tree package"
