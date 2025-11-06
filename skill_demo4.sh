@@ -15,7 +15,7 @@ echo "Checking to see if /home/admin already exists."
 if [ -d "/home/admin" ]; then
     echo "The folder already exists. This script will delete the contents of the folder and create new ones."
     read -p "Would you like to continue: Y/N?" choice
-  if [ "$choice" == "y" || "$choice" == "Y" ]; then
+  if [ $choice == "y" ] || [ $choice == "Y" ]; then
       sudo rm -r /home/admin
   else 
       exit
